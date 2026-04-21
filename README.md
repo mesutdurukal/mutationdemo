@@ -3,8 +3,9 @@
 This is a minimal Java Maven project to demonstrate mutation testing using PIT (pitest).
 
 ## Structure
-- `MathOperations.java`: Simple math operations class
-- `MathOperationsTest.java`: JUnit tests for math operations
+- `OtherMathOperations.java`: Simple math operations class
+- `PowerFunction.java`: Power calculation class
+- `OtherMathOperationsTest.java`: JUnit tests for math operations
 
 ## How to Run
 
@@ -14,7 +15,7 @@ This is a minimal Java Maven project to demonstrate mutation testing using PIT (
    ```
 2. **Run Mutation Testing:**
    ```sh
-   mvn org.pitest:pitest-maven:mutationCoverage
+   mvn clean test-compile pitest:mutationCoverage
    ```
 3. **View Report:**
    Open `target/pit-reports/index.html` in your browser.

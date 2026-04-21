@@ -14,7 +14,15 @@ public class MathOperations {
     }
 
     public int divide(int a, int b) {
-        if (b == 0) throw new IllegalArgumentException("Divider cannot be zero");
+        if (b == 0) throw new java.lang.IllegalArgumentException("Divider cannot be zero");
         return a / b;
+    }
+
+    public int power(int a, int b) {
+        return (int) Math.pow(a, b);
+    }
+
+    public boolean isPositive(int x) {
+        return x > 0;
     }
 }
